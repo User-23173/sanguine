@@ -19,7 +19,6 @@ import { LoaderIcon } from 'react-hot-toast'
 export const ConnectedIndicator = () => {
   return (
     <button
-      data-test-id="connected-button"
       className={`
         flex items-center justify-center
         text-base text-white px-3 py-1 rounded-lg
