@@ -105,10 +105,10 @@ export const useFallbackBridgeDestinationQuery = ({
     // Update bridge transaction in either Pending or Fallback
     if (destinationInfo && kappa && isCompleted) {
       const originQueryTransaction: BridgeTransaction | undefined =
-        fallbackQueryPendingTransactions.find(
+        fallbackQueryPendingTransactions?.find(
           (transaction: BridgeTransaction) => transaction.kappa === kappa
         ) ??
-        pendingAwaitingCompletionTransactions.find(
+        pendingAwaitingCompletionTransactions?.find(
           (transaction: BridgeTransaction) => transaction.kappa === kappa
         )
 
